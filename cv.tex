@@ -11,6 +11,7 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 \documentclass[localFont,alternative,10pt,compact]{yaac-another-awesome-cv}
+\PassOptionsToPackage{german}{babel} % .cls file loads english & french
 
 \name{Fabian}{Hummel}
 \tagline{Professionelle Schnecke}
@@ -27,6 +28,7 @@
 \setleftcolumnlength{2.5cm}
 
 \begin{document}
+\selectlanguage{german} % override language option specified in .cls file
 
 \makecvheader
 
