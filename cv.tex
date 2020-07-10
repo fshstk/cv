@@ -4,46 +4,50 @@
 % This document is based on the excellent Awesome Source CV LaTeX Template:
 % https://github.com/darwiin/awesome-neue-latex-cv
 %
+% Document author: Fabian Hummel
 % Template author: Christophe Roger
-% Modified by: Fabian Hummel
 %
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 \documentclass[localFont,alternative,10pt,compact]{yaac-another-awesome-cv}
+
 \name{Fabian}{Hummel}
 \tagline{Professionelle Schnecke}
 \photo{2.5cm}{Hummel Ausweisfoto}
 \socialinfo{
 	% \github{fshstk}\\
-	\smartphone{+43 660 6506664}
-	\email{fabian@fshstk.com}\\
+	\email{fabian@fshstk.com}
+	\infos{\link{http://www.fshstk.com}{www.fshstk.com}}\\
 	\address{Wiener Straße 33 | 8020 Graz | AT}\\
-	\infos{Geboren: 08.12.1989}
+	\smartphone{+43 660 6506664}
 }
 
-% Uncomment the following line and use a value from 1.5cm to 2.5cm
-%\setleftcolumnlength{2.5cm}
-
-
+% Length of left column in work experience section:
+\setleftcolumnlength{2.5cm}
 
 \begin{document}
 
 \makecvheader
 
-\makecvfooter
-{\textsc{\selectlanguage{english}\today}}
-{\textsc{Fabian Hummel – Lebenslauf}}
-{\thepage}
+\makecvfooter{
+	% Left text:
+	\textsc{Lebenslauf}
+}{
+	% Center text:
+	\textsc{Fabian Hummel}
+}{
+	% Right text:
+	\thepage
+}
 
-\input{section_headline_archi}
-\input{section_competences}
-\input{section_experience_short}
-\input{section_langues}
-\input{section_scolarite}
+\input{sections/headline}
+\input{sections/skills}
+\input{sections/work_experience}
+% \input{section_langues}
+\input{sections/education}
 % \input{section_interets}
-\input{section_projets}
+\input{sections/projects}
 % \input{section_references}
-
 
 \end{document}
