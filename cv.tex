@@ -1,23 +1,20 @@
 % !TEX TS-program = lualatex
 % Fabian Hummel – CV
 %
-% This document is based on the excellent Awesome Source CV LaTeX Template:
+% This document uses the Awesome Source CV LaTeX Template by Christophe Roger:
 % https://github.com/darwiin/awesome-neue-latex-cv
 %
-% Document author: Fabian Hummel
-% Template author: Christophe Roger
-%
-% Template license:
+% Document license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 \PassOptionsToPackage{german}{babel} % .cls file loads english & french
-\documentclass[localFont]{yaac-another-awesome-cv}
+\documentclass[localFont, monochrome]{yaac-another-awesome-cv}
+\setleftcolumnlength{1.5cm}
 
 \name{Fabian}{Hummel}
-\tagline{Professionelle Schnecke}
-\photo{2.5cm}{Hummel Ausweisfoto}
+\tagline{Lebenslauf}
+\photo{2.5cm}{fabian2}
 \socialinfo{
-	% \github{fshstk}\\
 	\email{fabian@fshstk.com}
 	\infos{\link{http://www.fshstk.com}{www.fshstk.com}}\\
 	\address{Wiener Straße 33 | 8020 Graz | AT}\\
@@ -28,22 +25,12 @@
 \selectlanguage{german} % override language option specified in .cls file
 
 \makecvheader
+\makecvfooter{\github{fshstk/cv}}{Fabian Hummel}{\thepage} % {L}{C}{R}
 
-\makecvfooter{
-	% Left text:
-	\textsc{Lebenslauf}
-}{
-	% Center text:
-	\textsc{Fabian Hummel}
-}{
-	% Right text:
-	\thepage
-}
-
-\input{sections/headline}
-\input{sections/skills}
+% \input{sections/headline}
 \input{sections/work_experience}
 \input{sections/education}
+\input{sections/skills}
 \input{sections/projects}
 
 \end{document}
