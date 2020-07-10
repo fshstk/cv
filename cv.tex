@@ -10,8 +10,8 @@
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
-\documentclass[localFont,alternative,10pt,compact]{yaac-another-awesome-cv}
 \PassOptionsToPackage{german}{babel} % .cls file loads english & french
+\documentclass[localFont]{yaac-another-awesome-cv}
 
 \name{Fabian}{Hummel}
 \tagline{Professionelle Schnecke}
@@ -23,9 +23,6 @@
 	\address{Wiener Straße 33 | 8020 Graz | AT}\\
 	\smartphone{+43 660 6506664}
 }
-
-% Length of left column in work experience section:
-\setleftcolumnlength{2.5cm}
 
 \begin{document}
 \selectlanguage{german} % override language option specified in .cls file
@@ -46,10 +43,7 @@
 \input{sections/headline}
 \input{sections/skills}
 \input{sections/work_experience}
-% \input{section_langues}
 \input{sections/education}
-% \input{section_interets}
 \input{sections/projects}
-% \input{section_references}
 
 \end{document}
