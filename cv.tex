@@ -10,7 +10,7 @@
 
 \PassOptionsToPackage{german}{babel} % .cls file loads english & french
 \PassOptionsToPackage{includefoot}{geometry} % fix footer being too low
-\documentclass[localFont, compact, monochrome]{yaac-another-awesome-cv}
+\documentclass[localFont, monochrome]{yaac-another-awesome-cv}
 \setmainfont{IBM Plex Sans}
 \setleftcolumnlength{1.5cm}
 
@@ -31,9 +31,10 @@
 \makecvfooter{\github{fshstk/cv}}{Fabian Hummel}{\thepage} % {L}{C}{R}
 
 % \input{sections/headline}
-\input{sections/work_experience}
-\input{sections/education}
 \input{sections/skills}
+\input{sections/work_experience}
+\pagebreak
+\input{sections/education}
 \input{sections/projects}
 
 \end{document}
