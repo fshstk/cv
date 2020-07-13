@@ -8,6 +8,16 @@
 % Document license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
+\newif\ifusinggerman
+\newif\ifusingenglish
+
+% Select language here by commenting one of the following lines:
+\usinggermantrue
+% \usingenglishtrue
+
+\newcommand{\german}[1]{\ifusinggerman#1\fi}
+\newcommand{\english}[1]{\ifusingenglish#1\fi}
+
 \PassOptionsToPackage{german}{babel} % .cls file loads english & french
 \PassOptionsToPackage{includefoot}{geometry} % fix footer being too low
 \documentclass[localFont, monochrome]{yaac-another-awesome-cv}
@@ -15,17 +25,22 @@
 \setleftcolumnlength{1.5cm}
 
 \name{Fabian}{Hummel}
-\tagline{Lebenslauf}
-\photo[circle]{4cm}{photos/fabian6}
+\tagline{\german{Lebenslauf}\english{Curriculum Vitae}}
+\photo[circle]{4cm}{photos/fabian15_pdf}
 \socialinfo{
 	\email{fabian@fshstk.com}
 	\smartphone{+43 660 6506664}\\
 	\address{Wiener Straße 33 | 8020 Graz | AT}\\
-	\infos{Geb. 08.12.1989 | Nationalität: Österreich}\\
+	\infos{%
+	\german{Geb. 08.12.1989 | Nationalität: Österreich}%
+	\english{DoB: Dec 08 1989 | Nationality: Austrian}%
+	}\\
 }
 
 \begin{document}
-\selectlanguage{german} % override language option specified in .cls file
+
+\ifusinggerman\selectlanguage{german}\fi
+\ifusingenglish\selectlanguage{english}\fi
 
 \makecvheader
 \makecvfooter{\github{fshstk/cv}}{Fabian Hummel}{\thepage} % {L}{C}{R}
