@@ -4,7 +4,7 @@
 
 This project uses the excellent [YAAC: Yet Another Awesome CV](https://github.com/darwiin/yaac-another-awesome-cv) package by Christophe Roger ([darwiin](https://github.com/darwiin)). Head on over there for technical details.
 
-The document in German or English, switching automatically depending on the
+The document is in German or English, switching automatically depending on the
 values of the variables \usinggerman & \usingenglish.
 
 ## License
