@@ -1,5 +1,10 @@
 # Fabian Hummel – CV
 
+Hi! You've stumbled onto the repository used for compiling my CV:
+
+![Page 1](images/page1.png)
+![Page 2](images/page2.png)
+
 ## About
 
 This project uses the excellent [YAAC: Yet Another Awesome CV](https://github.com/darwiin/yaac-another-awesome-cv) package by Christophe Roger ([darwiin](https://github.com/darwiin)). Head on over there for technical details.
