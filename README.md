@@ -2,8 +2,8 @@
 
 Hi! You've stumbled onto the repository used for compiling my CV:
 
-![Page 1](images/page1.png)
-![Page 2](images/page2.png)
+![Page 1](screenshots/page1.png)
+![Page 2](screenshots/page2.png)
 
 ## About
 
